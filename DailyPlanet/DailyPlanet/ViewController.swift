@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         //TODO: Call function to fetch image data here
         fetchNasaDailyImage()
+        fetchStarshipData()
     }
 
     //MARK: Data Fetch functions
@@ -36,9 +37,9 @@ class ViewController: UIViewController {
         // Create Data Task
         let dataTask = defaultSession.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             
-            print("data is: ", data!)
-            print("response is: ", response!)
-            
+//            print("data is: ", data!)
+//            print("response is: ", response!)
+//
         })
         dataTask.resume()
     }
@@ -57,10 +58,10 @@ class ViewController: UIViewController {
             
            //  Create Data Task...
             let dataTask = defaultSession.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
-     
-                print("data is: ", data!)
-                print("response is: ", response!)
-     
+//
+//                print("data is: ", data!)
+//                print("response is: ", response!)
+//
                 if let data = data, let image = UIImage(data: data) {
                     DispatchQueue.main.async {
      
@@ -71,6 +72,35 @@ class ViewController: UIViewController {
             })
             dataTask.resume()
         }
+    }
+    
+    func fetchStarshipData() {
+        let defaultSession = URLSession(configuration: .default)
+        
+        //TODO: Create URL (...and send request and process response in closure...)
+        if let url = URL(string: "https://swapi.co/api/starships/") {
+            
+            // TODO: Create Request here
+            let request = URLRequest(url: url)
+            
+            //  Create Data Task...
+            let dataTask = defaultSession.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
+                
+                print("data is: ", data!)
+//                print("response is: ", response!)
+                
+                if let data = data {
+                    do {
+                        let jasonObject = try JSONSerialization.jsonObject(with: data, options: [])
+                        print(jasonObject)
+                    } catch {
+                        print("JSON error: \(error.localizedDescription)")
+                    }
+                }
+            })
+            dataTask.resume()
+        }
+            
     }
 }
 
