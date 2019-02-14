@@ -14,6 +14,8 @@
 		44649B4C220CB8BA008F8866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44649B4A220CB8BA008F8866 /* LaunchScreen.storyboard */; };
 		44649B57220CB8BA008F8866 /* DailyPlanetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44649B56220CB8BA008F8866 /* DailyPlanetTests.swift */; };
 		44649B62220CB8BA008F8866 /* DailyPlanetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44649B61220CB8BA008F8866 /* DailyPlanetUITests.swift */; };
+		9D91DD332213AD1A0060870D /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DD322213AD1A0060870D /* PeopleTableViewController.swift */; };
+		9D91DD352213B12F0060870D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91DD342213B12F0060870D /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		44649B5D220CB8BA008F8866 /* DailyPlanetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyPlanetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44649B61220CB8BA008F8866 /* DailyPlanetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlanetUITests.swift; sourceTree = "<group>"; };
 		44649B63220CB8BA008F8866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D91DD322213AD1A0060870D /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		9D91DD342213B12F0060870D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				44649B41220CB8B8008F8866 /* AppDelegate.swift */,
 				44649B43220CB8B8008F8866 /* ViewController.swift */,
 				44649B45220CB8B8008F8866 /* Main.storyboard */,
+				9D91DD342213B12F0060870D /* PersonTableViewCell.swift */,
+				9D91DD322213AD1A0060870D /* PeopleTableViewController.swift */,
 				44649B48220CB8BA008F8866 /* Assets.xcassets */,
 				44649B4A220CB8BA008F8866 /* LaunchScreen.storyboard */,
 				44649B4D220CB8BA008F8866 /* Info.plist */,
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44649B44220CB8B8008F8866 /* ViewController.swift in Sources */,
+				9D91DD332213AD1A0060870D /* PeopleTableViewController.swift in Sources */,
+				9D91DD352213B12F0060870D /* PersonTableViewCell.swift in Sources */,
 				44649B42220CB8B8008F8866 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P32V53W8H7;
 				INFOPLIST_FILE = DailyPlanet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P32V53W8H7;
 				INFOPLIST_FILE = DailyPlanet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
